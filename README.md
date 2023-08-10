@@ -37,7 +37,7 @@ El proyecto puede ser desplegado en dos entornos: producción o desarrollo. Aseg
 ### Contribuciones
 
 - ¡Las contribuciones son bienvenidas! Si encuentras mejoras o correcciones, no dudes en hacer un pull request.
-- 
+
 - Si tienes alguna pregunta o sugerencia, no dudes en contactarme a través de mi correo electrónico: contact@emanuelbustos.com
 
   Hecho con ❤️ por [emanuelB1](https://github.com/emanuelB1)
