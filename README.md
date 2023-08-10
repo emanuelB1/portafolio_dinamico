@@ -32,9 +32,11 @@ El proyecto puede ser desplegado en dos entornos: producción o desarrollo. Aseg
 
 5. Despliega el proyecto en el entorno deseado (development o production): `python manage.py runserver --settings=config.settings.development`
 
-6. Crea un super usuario: `python manage.py createsuperuser --settings=config.settings.development`
+6. Realiza las migraciones: `python manage.py makemigrations --settings=config.settings.development` `python manage.py migrate --settings=config.settings.development`
 
-7. Accede al panel administrativo en la URL http://localhost:8000/admin/ para comenzar a agregar contenido y proyectos.
+7. Crea un super usuario: `python manage.py createsuperuser --settings=config.settings.development`
+
+8. Accede al panel administrativo en la URL http://localhost:8000/admin/ para comenzar a agregar contenido y proyectos.
 
 ### Contribuciones
 
