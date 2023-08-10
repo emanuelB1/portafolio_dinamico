@@ -21,7 +21,7 @@ El proyecto puede ser desplegado en dos entornos: producción o desarrollo. Aseg
 - Archivo `.env` en producción, configura las variables de entorno según tus necesidades.
 - Python
 
-### Pasos para el Despliegue en Desarrollo
+### Pasos para el Despliegue
 
 1. Clona este repositorio en tu máquina local.
 
