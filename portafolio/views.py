@@ -4,7 +4,8 @@ from .forms import CustomContactForm
 from django.contrib import messages
 from django.core.mail import send_mail
 
-
+# podrias separar la vista en varias, en este caso realizo todo en una vista
+# renderizo mi perfil, mis proyectos, y establezco la logica de los correos.
 def index(request):
     perfil = Profile.objects.first()
     proyectos = Proyecto.objects.all()
@@ -21,7 +22,7 @@ def index(request):
             from_email = form.cleaned_data['email']
 
             # Lista de destinatarios (tu dirección de correo electrónico)
-            recipient_list = ['contact@emanuelbustos.com']
+            recipient_list = ['contact@tudominio.com']
 
             # Asunto del correo
             subject = form.cleaned_data['subject']

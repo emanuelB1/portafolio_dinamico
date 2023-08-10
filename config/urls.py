@@ -6,7 +6,7 @@ from django.conf import settings
 from django.views.static import serve
 
 urlpatterns = [
-    path("asdñlfjm/", admin.site.urls),
+    path("admin/", admin.site.urls),
     path("", include('portafolio.urls')),
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 

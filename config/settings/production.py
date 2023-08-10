@@ -32,22 +32,18 @@ STATIC_ROOT = Path.joinpath(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CSRF_TRUSTED_ORIGINS = ['https://portafoliocondjango-production.up.railway.app',
-                        'https://emanuelbustos.cl',
-                        'https://emanuelbustos.com',
-                        ]
+# Esto varia dependiendo de donde alojaras tu aplicación
+CSRF_TRUSTED_ORIGINS = ['https://esto_es_el_link_de_tu_pagina_en_produccion.com']
 
 if not DEBUG:
-    CSRF_TRUSTED_ORIGINS = ['https://portafoliocondjango-production.up.railway.app',
-                            'https://emanuelbustos.cl',
-                            'https://emanuelbustos.com',
-    ]
+    CSRF_TRUSTED_ORIGINS = ['https://esto_es_el_link_de_tu_pagina_en_produccion.com']
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 
+# Si usaras servicio de mail en tu aplicación, debes configurar esto
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False  # No usar SSL, ya que estás usando TLS

@@ -1,5 +1,5 @@
 from django.db import models
-
+# Crea tu modelo personalizado en relación a lo que quieres mostar en tu portafolio
 
 class Profile(models.Model):
     # Campos para el perfil
@@ -24,7 +24,7 @@ class Proyecto(models.Model):
     foto = models.ImageField(upload_to='proyectos/')
     enlace_pagina = models.URLField()
     enlace_github = models.URLField()
-
+    # podrias añadir mas enlaces deacuerdo a tus necesidades
     def __str__(self):
         return self.nombre
 

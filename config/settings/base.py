@@ -130,15 +130,11 @@ IMAGEKIT_DEFAULT_CACHEFILE_BACKEND = 'imagekit.imagecache.NonValidatingImageCach
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://portafoliocondjango-production.up.railway.app',
-    'https://emanuelbustos.cl',
-    'https://emanuelbustos.com',
+    'https://esto_es_el_link_de_tu_pagina_en_produccion.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://portafoliocondjango-production.up.railway.app',
-    'https://emanuelbustos.cl',
-    'https://emanuelbustos.com',
+    'https://esto_es_el_link_de_tu_pagina_en_produccion.com'
 ]
 
 STATIC_URL = '/static/'

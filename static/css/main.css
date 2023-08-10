@@ -266,6 +266,8 @@ body {
     background-color: #2a27e2 !important;
 }
 
+/* ¿Porque tanto important? como estoy trabajando con Bootstrap cuesta que tome los estilo :)*/
+
 
 .paper-airplane {
     display: none;
@@ -373,7 +375,7 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-
+/* Las siguientes animaciones a la fecha de hoy solo las soportan algunos navegadores, como Chrome*/
 
 @keyframes show {
     from {
