@@ -11,7 +11,7 @@ Este es mi portafolio personal. El portafolio está comentado y dockerizado para
 
 ## Despliegue
 
-### Opciones de Despliegue
+### Opciones de Despliegue en Desarrollo
 
 El proyecto puede ser desplegado en dos entornos: producción o desarrollo. Asegúrate de elegir la configuración adecuada antes de continuar.
 
