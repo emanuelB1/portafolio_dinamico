@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap');
+
+
+
+body {
+    background-color: #111 !important;
+}
+
+.nombre {
+    font-family: 'Bebas Neue', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 4.5rem;
+    max-width: 18ch;
+    color: #111;
+    line-height: .9;
+    word-wrap: normal;
+}
+
+.texto {
+    font-family: 'Raleway', sans-serif !important;
+    margin-top: 6px;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #111;
+}
+
+@media (max-width: 767px) {
+    .nombre {
+        font-size: 2.5rem;
+    }
+
+    .texto {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1300px) {
+    .nombre {
+        font-size: 3.5rem;
+    }
+
+    .texto {
+        font-size: 1rem;
+    }
+}
+
+
+
+.apple-card {
+    display: flex;
+    border-radius: 30px !important;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    flex: 1;
+    padding: 1rem;
+}
+
+.name-container {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    
+}
+
+
+/* Estilos para el contenedor de lenguajes */
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+/* Estilos para los iconos de lenguajes */
+.icon-container i {
+    font-size: 24px; /* Ajusta el tamaño de los iconos */
+    margin: 8px; /* Agrega margen entre los iconos */
+    /* Añade otros estilos de iconos según tus preferencias */
+}
+
+.icon-container svg {
+    width: 40px; /* Ajusta el tamaño según lo necesites */
+    height: 40px; /* Ajusta el tamaño según lo necesites */
+    fill: #010e09; /* Cambia el color si lo deseas */
+    vertical-align: middle;
+}
+
+.card-img-container {
+    width: 200px;
+    height: 200px;
+    margin: 26px;
+    width: 100%;
+    max-width: 200px; /* Establece un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex; /* Utiliza flexbox para mantener la imagen cuadrada */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.card-img {
+    object-fit: cover;
+    max-width: 100%; /* Establece el ancho máximo de la imagen */
+    height: auto; /* Ajusta automáticamente la altura para mantener la proporción */
+    display: block; /* Evita espacio adicional debajo de la imagen */
+}
+
+.card-img-container-foto {
+    width: 200px;
+    height: 200px;
+    margin: 26px;
+    width: 100%;
+    max-width: 200px; /* Establece un ancho máximo para el contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex; /* Utiliza flexbox para mantener la imagen cuadrada */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+
+.cip {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px; /* Borde solo en la parte superior */
+    height: 200px; /* Altura fija para la imagen */
+}
+
+.ip {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.custom-card {
+    background-color: #feebcf !important;
+    
+}
+
+.gif-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.gif {
+    width: 45px;
+    height: 45px;
+    transition: transform 0.3s; /* Agregar una transición suave */
+}
+
+.gif-container:hover .gif,
+.gif-container:active .gif {
+    animation: play-gif 2s infinite; /* Ajusta la duración y animación según sea necesario */
+}
+
+@keyframes play-gif {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/* Estilos iniciales */
+.banner {
+    position: relative;
+    overflow: hidden;
+    transition: height 0.3s ease;
+}
+
+
+/* Estilos al hacer hover */
+.banner:hover {
+    cursor: pointer;
+    animation-play-state: running; /* Asegura que la animación esté en ejecución al hacer hover */
+}
+
+
+/* Detener la animación cuando se mantiene el hover */
+.banner:hover .gif-container:hover {
+    animation-play-state: paused; /* Pausar la animación al mantener el hover en el contenedor del gif */
+}
+
+@keyframes play-gif {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.card-img-container {
+    overflow: hidden;
+    
+}
+
+.card-img-container:hover {
+    transform: scale(1.1); /* Escala la imagen al hacer hover */
+    transition: width 0.3s ease-in-out;
+}
+
+.proyecto:hover {
+    transform: scale(1.05);
+}
+
+.link {
+   width: 100px;
+   background-color: #111 !important;
+   
+}
+
+.link:hover {
+    width: 150px;
+    transform: scale(1.05);
+    transition: width 0.3s ease-in-out;
+}
+
+.link-contac {
+    background-color: #111 !important;
+    width: 150px;
+}
+
+
+.link-icon {
+    font-size: 30px; /* Ajusta el tamaño de fuente según sea necesario */
+}
+
+.perfil {
+    background-color: #01aa89 !important;
+}
+
+.lenguajes {
+    background-color: #fed2cf !important;
+}
+
+.redes {
+    background-color: #abaddd !important;
+}
+
+.proyectos {
+    background-color: #fafecf !important;
+}
+
+.contacto {
+    background-color: #2a27e2 !important;
+}
+
+
+.paper-airplane {
+    display: none;
+}
+
+.paper-airplane {
+    color: #fff;
+    position: absolute;
+    font-size: 2rem;
+    animation: fly 2s linear infinite;
+  }
+
+  @keyframes fly {
+    0% { transform: translateX(0) translateY(0) rotate(0deg); }
+    100% { transform: translateX(100vw) translateY(-50vh) rotate(150deg); }
+  }
+
+.custom-icon {
+    color: #111;
+    font-size: 2rem;
+    animation: flyArrow 1.5s linear infinite;
+    position: absolute;
+    transform-origin: center bottom;
+}
+
+ @keyframes flyArrow {
+    0% { transform: translateX(0) translateY(0) rotate(0deg); }
+    100% { transform: translateX(100vw) translateY(0) rotate(10deg); }    
+}
+
+.animate {
+    display: none;
+}
+
+.banner:hover .animate {
+    display: block;
+}
+
+.contac {
+    font-family: 'Bebas Neue', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    max-width: 18ch;
+    margin-bottom: 0;
+    color: #fff;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+
+.email {
+    font-family: 'Raleway', sans-serif !important;
+    margin-top: 6px;
+    font-size: 1.125em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.mis {
+    font-family: 'Bebas Neue', sans-serif !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2.5rem;
+    max-width: 18ch;
+    margin-bottom: 0;
+    color: #111;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: start !important;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 767px) {
+    .contac {
+        font-size: 2rem;
+    }
+
+    .mis {
+        font-size: 2rem;
+    }
+}
+
+.pagina {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pagina:hover {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);     
+}
+
+.stock {
+    background-color: #beed3a !important;
+}
+
+.redes-icon {
+    text-decoration: none;
+    color: #111;
+    font-size: larger;
+}
+
+.redes-icon:hover {
+    color: #fed2cf;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@keyframes show {
+    from {
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+@keyframes show_especial {
+    from {
+        scale: 25%;
+    }
+
+    to {
+        scale: 100%;
+    }
+}
+
+@keyframes show_especials {
+    from {
+        scale: 80%;
+    }
+
+    to {
+        scale: 100%;
+    }
+}
+
+.custom {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.custom-especial {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show_especial;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.custom-especials {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show_especials;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}
+
+.pagina-titulo {
+    color: #fff !important;
+    border-radius: 25px;
+    background-color: #111;
+    font-size: x-large;
+    
+}
+
+.pagina-titulo:hover {
+    font-size: xx-large;
+    transform: scale(1.1); /* Escala la imagen al hacer hover */
+    transition: font-size 0.3s ease-in-out;
+}
+
+/* Estilos para pantallas entre 900px y 767px */
+@media (min-width: 768px) and (max-width: 1200px) {
+    .pagina-titulo {
+        font-size: medium;
+        letter-spacing: 0.1em;
+        
+    }
+    .pagina-titulo:hover {
+        font-size: large;
+        
+    }
+}

@@ -1,0 +1,26 @@
+{% load static %}
+<div class="custom card apple-card mt-4 redes">
+    <div class="d-block">
+        <div class="row">
+            <div class="col icon-container">
+                <a href="{{ perfil.linkedin_link }}" target="_blank" class="redes-icon text-center">
+                    <i class="fab fa-linkedin"></i>
+                    <p class="m-0">LinkedIn</p>
+                </a>
+            </div>
+            <div class="col icon-container">
+                <a href="{{ perfil.github_link }}" target="_blank" class="redes-icon text-center">
+                    <i class="fab fa-github"></i>
+                    <p class="m-0">GitHub</p>
+                </a>
+            </div>
+            
+            <div class="col icon-container redes-icon text-center">
+                <a href="{% static 'Emanuel Bustos CV español.pdf' %}" target="_blank" class="redes-icon">
+                    <i class="fas fa-download"></i>
+                    <p class="m-0">CV</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

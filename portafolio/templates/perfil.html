@@ -1,0 +1,21 @@
+<div class="card apple-card mt-4 perfil">
+    <div class="row">
+        <div class="col-md-6 container d-flex flex-column">
+            <div class="card-content">
+                <div class="name-container">
+                    <h2 class="card-title nombre">{{ perfil.name }}</h2>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 container">
+            <div class="d-block">
+                <div class="card-content">
+                    <p class="card-text texto">{{ perfil.descripcion }}</p>
+                    <!-- Agrega aquí los enlaces a las redes sociales si decides incluirlos en el modelo -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include "banner.html" %}
+

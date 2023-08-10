@@ -1,0 +1,17 @@
+{% if messages %}
+<div class="container p-0 mb-4 mt-4">
+    <div class="col container p-0 custom">
+        {% for message in messages %}
+        {% if message.tags == 'error' %}
+        <div class="card apple-card custom-card lenguajes">
+        {% else %}
+        <div class="card apple-card custom-card stock">
+        {% endif %}
+            <div class="card-img-container-foto texto text-center">
+                <div class="{{ message.tags }}">{{ message }}</div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endif %}

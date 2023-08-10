@@ -1,0 +1,25 @@
+<div class="container mt-4 p-0" id="proyectos">
+    <div class="row">
+        {% for proyecto in proyectos %}
+        <div class="col-md-6 col-lg-4 mb-4">
+            <div class="custom card text-white apple-card proyecto" style="background-image: url('{{ proyecto.foto.url }}'); background-size: cover; border: none; height: 300px; transition: transform 0.3s; position: relative;">
+                <a href="{{ proyecto.enlace_pagina }}" target="_blank">
+                    <div class="card-img-overlay d-flex flex-column p-3">
+                        <h5 class="card-title mb-4 mt-2">
+                            <a href="{{ proyecto.enlace_pagina }}" class="text-decoration-none contac pagina-titulo p-2" target="_blank">{{ proyecto.nombre }}</a>
+                        </h5>
+                        <div class="d-flex justify-content-between mt-auto">
+                            <a href="{{ proyecto.enlace_pagina }}" class="btn btn-dark btn-lg link rounded-pill" target="_blank">
+                                <i class="fas fa-globe link-icon"></i>
+                            </a>
+                            <a href="{{ proyecto.enlace_github }}" class="btn btn-dark btn-lg ml-auto link rounded-pill" target="_blank">
+                                <i class="fab fa-github link-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

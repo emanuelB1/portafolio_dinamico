@@ -1,0 +1,15 @@
+
+
+<div class="custom card apple-card contacto p-5 mb-4" id="contacto">
+    <div class="row">
+        <h2 class="contac">Contacto</h2>
+        <form method="POST" class="needs-validation email" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="text-end">
+            <button type="submit" class="btn btn-dark btn-lg ml-auto link-contac rounded-pill text-center">Enviar</button>
+            </div>
+        </form>
+    </div>
+</div>
+

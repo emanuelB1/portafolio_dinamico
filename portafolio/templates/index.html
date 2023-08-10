@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block perfil %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+            {% include "perfil.html" %}
+        </div>
+        <div class="col-lg-4">
+            <div>
+                {% include "foto.html" %}
+                {% include "lenguajes.html" %}
+                {% include "stock.html" %}
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            {% include "proyectos.html" %}
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+            <div>
+                {% include "mensaje.html" %}
+            </div>
+        </div>
+        <div class="col-lg-8">
+            {% include "contacto.html" %}
+        </div>
+    </div>
+</div>
+{% endblock perfil %}
+
+
