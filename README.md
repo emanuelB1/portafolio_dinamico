@@ -19,6 +19,7 @@ El proyecto puede ser desplegado en dos entornos: producción o desarrollo. Aseg
 
 - Docker solo en producción.
 - Archivo `.env` en producción, configura las variables de entorno según tus necesidades.
+- Python
 
 ### Pasos para el Despliegue
 
