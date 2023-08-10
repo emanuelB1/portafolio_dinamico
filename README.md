@@ -11,7 +11,7 @@ Este es mi portafolio personal. El portafolio está comentado y dockerizado para
 
 ## Despliegue
 
-### Opciones de Despliegue en Desarrollo
+### Opciones de Despliegue 
 
 El proyecto puede ser desplegado en dos entornos: producción o desarrollo. Asegúrate de elegir la configuración adecuada antes de continuar.
 
@@ -21,7 +21,7 @@ El proyecto puede ser desplegado en dos entornos: producción o desarrollo. Aseg
 - Archivo `.env` en producción, configura las variables de entorno según tus necesidades.
 - Python
 
-### Pasos para el Despliegue
+### Pasos para el Despliegue en Desarrollo
 
 1. Clona este repositorio en tu máquina local.
 
